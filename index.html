@@ -3,100 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harmony Apartments, DDA SFS Flats,  Pocket-1, Sector-4, Dwarka, New Delhi 110078</title>
+  <title>Harmony Apartments - Dwarka</title>
 
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
   </style>
 </head>
 
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- 🔝 Navbar -->
-  <header class="bg-white shadow fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
-      <h1 class="text-xl font-bold text-green-700">Harmony Apartments</h1>
-      <nav class="space-x-6 hidden md:block">
-        <a href="#home" class="hover:text-green-700">Home</a>
-        <a href="#about" class="hover:text-green-700">About</a>
-        <a href="#facilities" class="hover:text-green-700">Facilities</a>
-        <a href="#notices" class="hover:text-green-700">Notices</a>
-        <a href="#contact" class="hover:text-green-700">Contact</a>
-      </nav>
-    </div>
-  </header>
+<!-- 🔝 Navbar -->
+<header class="bg-white shadow fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 class="text-xl font-bold text-blue-700">Harmony Apartments</h1>
 
-  <!-- 🏡 Hero Section -->
-  <section id="home" class="h-screen bg-blue-700 text-white flex items-center justify-center text-center pt-20">
+    <!-- Desktop Menu -->
+    <nav class="space-x-6 hidden md:block">
+      <a href="#home" class="hover:text-blue-700">Home</a>
+      <a href="#about" class="hover:text-blue-700">About</a>
+      <a href="#facilities" class="hover:text-blue-700">Facilities</a>
+      <a href="#notices" class="hover:text-blue-700">Notices</a>
+      <a href="#contact" class="hover:text-blue-700">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- 🏡 Hero with Image -->
+<section id="home" class="h-screen relative flex items-center justify-center text-center text-white">
+  
+  <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6" 
+       class="absolute w-full h-full object-cover">
+
+  <div class="absolute inset-0 bg-black/50"></div>
+
+  <div class="relative z-10 px-4">
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">Harmony Apartments</h2>
+    <p class="text-lg">DDA SFS Flats, Dwarka Sector-4</p>
+    <a href="#about" class="mt-6 inline-block bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold">
+      Explore
+    </a>
+  </div>
+</section>
+
+<!-- 🏢 About -->
+<section id="about" class="py-16 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+  <div>
+    <h2 class="text-3xl font-bold mb-4">About Society</h2>
+    <p class="mb-3">
+      Harmony Apartments is a peaceful residential society located in Dwarka, New Delhi.
+    </p>
+    <p>
+      ✔ 200+ Flats <br>
+      ✔ Well-connected location <br>
+      ✔ 24/7 Security
+    </p>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+       class="rounded-xl shadow">
+</section>
+
+<!-- 🏋️ Facilities -->
+<section id="facilities" class="py-16 bg-gray-100 px-6">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">Facilities</h2>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">🏋️ Gym</div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">🌳 Park</div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">🚗 Parking</div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">🛡️ Security</div>
+    </div>
+  </div>
+</section>
+
+<!-- 📢 Notices -->
+<section id="notices" class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold mb-8 text-center">Notices</h2>
+
+  <div class="space-y-4">
+    <div class="bg-white p-5 rounded-xl shadow border-l-4 border-blue-600">
+      <h3 class="font-semibold">Maintenance Meeting</h3>
+      <p class="text-sm text-gray-500">Date: To be announced</p>
+      <p>All residents are requested to attend.</p>
+    </div>
+
+    <div class="bg-white p-5 rounded-xl shadow border-l-4 border-green-600">
+      <h3 class="font-semibold">Water Supply</h3>
+      <p class="text-sm text-gray-500">Daily Schedule</p>
+      <p>Water supply available at 7 AM and 6 PM.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 📍 Contact + Map -->
+<section id="contact" class="py-16 bg-gray-100 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- Contact Info -->
     <div>
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Harmony Apartments</h2>
-      <p class="text-lg">A peaceful and modern community living</p>
-      <a href="#about" class="mt-6 inline-block bg-white text-green-700 px-6 py-2 rounded-lg font-semibold">Explore</a>
-    </div>
-  </section>
-
-  <!-- 🏢 About -->
-  <section id="about" class="py-16 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
-    <div>
-      <h2 class="text-3xl font-bold mb-4">About Society</h2>
-      <p class="mb-2">Harmony Apartments is a premium residential community designed for comfort and security.</p>
-      <p>✔ 200+ Flats<br>✔ Built in <br>✔ 24/7 Security</p>
-    </div>
-    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" class="rounded-xl shadow">
-  </section>
-
-  <!-- 🏋️ Facilities -->
-  <section id="facilities" class="py-16 bg-gray-100 px-6">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl font-bold mb-8 text-center">Facilities</h2>
-
-      <div class="grid md:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-xl shadow text-center">🏋️ Gym</div>
-        <div class="bg-white p-6 rounded-xl shadow text-center">🌳 Park</div>
-        <div class="bg-white p-6 rounded-xl shadow text-center">🚗 Parking</div>
-        <div class="bg-white p-6 rounded-xl shadow text-center">🛡️ Security</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 📢 Notices -->
-  <section id="notices" class="py-16 px-6 max-w-7xl mx-auto">
-    <h2 class="text-3xl font-bold mb-8 text-center">Notices</h2>
-
-    <div class="space-y-4">
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="font-semibold">Maintenance Meeting</h3>
-        <p class="text-sm text-gray-500"> - </p>
-        <p>All residents are requested to attend the meeting.</p>
-      </div>
-
-      <div class="bg-white p-4 rounded shadow">
-        <h3 class="font-semibold">Water Supply Notice</h3>
-        <p class="text-sm text-gray-500"> - </p>
-        <p>Water supply is available twice a day at 7 AM and 6 PM.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 📍 Contact -->
-  <section id="contact" class="py-16 bg-gray-100 px-6">
-    <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-      <p>📍 Delhi, India</p>
-      <p>📞 +91 </p>
-      <p>✉️ harmonyrwa</p>
+      <p class="mb-2">📍 Dwarka Sector-4, New Delhi</p>
+      <p class="mb-2">📞 +91 XXXXX XXXXX</p>
+      <p class="mb-2">✉️ harmonyrwa@example.com</p>
     </div>
-  </section>
 
-  <!-- 🔚 Footer -->
-  <footer class="bg-white text-center p-4 shadow mt-10">
-    <p>© 2026 Harmony Apartments Welfare Associations. All rights reserved.</p>
-  </footer>
+    <!-- Google Map -->
+    <iframe 
+      class="w-full h-64 rounded-xl shadow"
+      src="https://maps.google.com/maps?q=dwarka%20sector%204%20delhi&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+
+  </div>
+</section>
+
+<!-- 🔚 Footer -->
+<footer class="bg-white text-center p-4 shadow">
+  <p>© 2026 Harmony Apartments Welfare Association</p>
+</footer>
 
 </body>
 </html>
